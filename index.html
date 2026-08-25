@@ -6,8 +6,7 @@
 
 <title>Промокоды и купоны — лучшие скидки</title>
 
-<meta name="description"
-content="Актуальные промокоды, купоны и лучшие скидки на популярные товары.">
+<meta name="description" content="Актуальные промокоды, купоны и лучшие скидки на популярные товары.">
 
 <style>
 
@@ -28,9 +27,9 @@ body{
     overflow-x:hidden;
 }
 
-/* ---------- ФОН ---------- */
+/* ===== ФОН ===== */
 
-body::before{
+body:before{
     content:"";
     position:fixed;
     width:600px;
@@ -42,9 +41,10 @@ body::before{
     filter:blur(150px);
     border-radius:50%;
     pointer-events:none;
+    z-index:-1;
 }
 
-body::after{
+body:after{
     content:"";
     position:fixed;
     width:500px;
@@ -56,6 +56,7 @@ body::after{
     filter:blur(150px);
     border-radius:50%;
     pointer-events:none;
+    z-index:-1;
 }
 
 .container{
@@ -63,7 +64,7 @@ body::after{
     margin:auto;
 }
 
-/* ---------- HEADER ---------- */
+/* ===== HEADER ===== */
 
 header{
     padding:20px 0;
@@ -80,19 +81,23 @@ header{
     display:flex;
     align-items:center;
     gap:11px;
-    font-weight:800;
 }
 
 .logo-icon{
     width:43px;
     height:43px;
-    border-radius:13px;
 
     display:flex;
     justify-content:center;
     align-items:center;
 
-    background:linear-gradient(135deg,#ff3030,#ff7417);
+    border-radius:13px;
+
+    background:linear-gradient(
+        135deg,
+        #ff3030,
+        #ff7417
+    );
 
     font-size:23px;
     font-weight:900;
@@ -103,6 +108,7 @@ header{
 
 .logo-text{
     font-size:17px;
+    font-weight:800;
 }
 
 .logo-sub{
@@ -112,16 +118,20 @@ header{
 }
 
 .header-badge{
-    background:rgba(255,255,255,.06);
-    border:1px solid rgba(255,255,255,.08);
     padding:8px 13px;
+
     border-radius:30px;
 
+    background:rgba(255,255,255,.06);
+
+    border:1px solid rgba(255,255,255,.08);
+
     color:#bfc3cc;
+
     font-size:12px;
 }
 
-/* ---------- HERO ---------- */
+/* ===== HERO ===== */
 
 .hero{
     padding:65px 0 50px;
@@ -142,14 +152,13 @@ header{
     border-radius:30px;
 
     background:rgba(255,55,55,.10);
+
     border:1px solid rgba(255,75,75,.22);
 
     color:#ff7777;
 
     font-size:12px;
     font-weight:700;
-
-    letter-spacing:.4px;
 }
 
 h1{
@@ -178,7 +187,9 @@ h1 span{
 
 .hero-text{
     color:#9da3b1;
+
     font-size:18px;
+
     line-height:1.6;
 
     max-width:590px;
@@ -186,7 +197,9 @@ h1 span{
 
 .main-button{
     display:inline-flex;
+
     align-items:center;
+
     gap:10px;
 
     margin-top:25px;
@@ -207,6 +220,7 @@ h1 span{
     text-decoration:none;
 
     font-size:15px;
+
     font-weight:800;
 
     box-shadow:
@@ -222,7 +236,7 @@ h1 span{
         0 20px 50px rgba(255,60,40,.35);
 }
 
-/* ---------- РЕКЛАМНЫЙ БАННЕР ---------- */
+/* ===== БАННЕР ===== */
 
 .banner{
     position:relative;
@@ -250,7 +264,7 @@ h1 span{
     transform:rotate(1deg);
 }
 
-.banner::before{
+.banner:before{
     content:"";
 
     position:absolute;
@@ -272,15 +286,19 @@ h1 span{
 
 .banner-top{
     display:flex;
+
     justify-content:space-between;
+
     align-items:center;
 
     position:relative;
+
     z-index:2;
 }
 
 .market-logo{
     font-size:25px;
+
     font-weight:900;
 }
 
@@ -290,6 +308,7 @@ h1 span{
 
 .sale{
     background:#fff;
+
     color:#111;
 
     padding:8px 12px;
@@ -297,16 +316,19 @@ h1 span{
     border-radius:10px;
 
     font-size:11px;
+
     font-weight:900;
 }
 
 .big-sale{
     position:relative;
+
     z-index:2;
 
     margin-top:45px;
 
     font-size:82px;
+
     line-height:1;
 
     letter-spacing:-7px;
@@ -316,11 +338,13 @@ h1 span{
 
 .big-sale span{
     font-size:28px;
+
     letter-spacing:0;
 }
 
 .banner-description{
     position:relative;
+
     z-index:2;
 
     color:#b5bac5;
@@ -330,7 +354,7 @@ h1 span{
     line-height:1.5;
 }
 
-.products{
+.fake-products{
     display:grid;
 
     grid-template-columns:
@@ -341,11 +365,13 @@ h1 span{
     margin-top:25px;
 }
 
-.product{
+.fake-product{
     height:95px;
 
     display:flex;
+
     justify-content:center;
+
     align-items:center;
 
     border-radius:17px;
@@ -374,6 +400,7 @@ h1 span{
     border:1px solid rgba(255,255,255,.1);
 
     font-size:12px;
+
     font-weight:800;
 
     box-shadow:
@@ -392,7 +419,7 @@ h1 span{
     bottom:25px;
 }
 
-/* ---------- СЕКЦИИ ---------- */
+/* ===== СЕКЦИИ ===== */
 
 section{
     padding:45px 0;
@@ -440,7 +467,9 @@ section{
     height:45px;
 
     display:flex;
+
     align-items:center;
+
     justify-content:center;
 
     border-radius:13px;
@@ -467,7 +496,7 @@ section{
     font-size:14px;
 }
 
-/* ---------- ПРЕДЛОЖЕНИЯ ---------- */
+/* ===== ПРЕДЛОЖЕНИЯ ===== */
 
 .deals{
     display:grid;
@@ -492,13 +521,18 @@ section{
 
 .deal:hover{
     transform:translateY(-5px);
+
+    border-color:
+        rgba(255,70,60,.35);
 }
 
 .deal-image{
     height:145px;
 
     display:flex;
+
     align-items:center;
+
     justify-content:center;
 
     border-radius:15px;
@@ -559,9 +593,15 @@ section{
     font-size:12px;
 
     font-weight:800;
+
+    transition:.2s;
 }
 
-/* ---------- FINAL CTA ---------- */
+.deal-button:hover{
+    background:#ff4038;
+}
+
+/* ===== ФИНАЛЬНЫЙ БЛОК ===== */
 
 .final{
     margin-top:20px;
@@ -592,7 +632,7 @@ section{
     color:#949aa8;
 }
 
-/* ---------- FOOTER ---------- */
+/* ===== FOOTER ===== */
 
 footer{
     padding:25px 0 40px;
@@ -604,7 +644,7 @@ footer{
     font-size:12px;
 }
 
-/* ---------- MOBILE ---------- */
+/* ===== МОБИЛЬНАЯ ВЕРСИЯ ===== */
 
 @media(max-width:800px){
 
@@ -632,7 +672,6 @@ footer{
     h1{
         letter-spacing:-2.5px;
     }
-
 }
 
 @media(max-width:500px){
@@ -658,7 +697,11 @@ footer{
 </style>
 </head>
 
+
 <body>
+
+
+<!-- ===== ШАПКА ===== -->
 
 <header>
 
@@ -684,6 +727,7 @@ footer{
 
 </div>
 
+
 <div class="header-badge">
 🔥 Выгодные предложения каждый день
 </div>
@@ -693,19 +737,23 @@ footer{
 </header>
 
 
+
 <main>
 
-<!-- HERO -->
+
+<!-- ===== ПЕРВЫЙ ЭКРАН ===== -->
 
 <section class="hero">
 
 <div class="container hero-grid">
+
 
 <div>
 
 <div class="label">
 🔥 ГОРЯЧИЕ ПРЕДЛОЖЕНИЯ
 </div>
+
 
 <h1>
 
@@ -716,6 +764,7 @@ footer{
 
 </h1>
 
+
 <p class="hero-text">
 
 Промокоды, купоны и выгодные предложения
@@ -724,29 +773,33 @@ footer{
 
 </p>
 
+
 <a
 class="main-button"
 href="#deals"
 >
 
-Смотреть лучшие скидки
-
-→
+Смотреть лучшие скидки →
 
 </a>
 
 </div>
 
 
-<!-- БАННЕР -->
+
+<!-- ===== РЕКЛАМНЫЙ БЛОК ===== -->
 
 <div class="banner">
+
 
 <div class="banner-top">
 
 <div class="market-logo">
+
 Ali<span>Express</span>
+
 </div>
+
 
 <div class="sale">
 SALE
@@ -765,23 +818,25 @@ SALE
 <div class="banner-description">
 
 Скидки и промокоды на популярные товары.
+
 <br>
+
 Проверяйте цену перед покупкой.
 
 </div>
 
 
-<div class="products">
+<div class="fake-products">
 
-<div class="product">
+<div class="fake-product">
 📱
 </div>
 
-<div class="product">
+<div class="fake-product">
 🎧
 </div>
 
-<div class="product">
+<div class="fake-product">
 🤖
 </div>
 
@@ -792,9 +847,11 @@ SALE
 ⚡ Купон
 </div>
 
+
 <div class="floating two">
 💸 Выгодная цена
 </div>
+
 
 </div>
 
@@ -803,15 +860,18 @@ SALE
 </section>
 
 
-<!-- ПРЕИМУЩЕСТВА -->
+
+<!-- ===== ПРЕИМУЩЕСТВА ===== -->
 
 <section>
 
 <div class="container">
 
+
 <h2 class="section-title">
 Почему стоит заглянуть
 </h2>
+
 
 <div class="cards">
 
@@ -834,6 +894,7 @@ SALE
 </div>
 
 
+
 <div class="card">
 
 <div class="card-icon">
@@ -850,6 +911,7 @@ SALE
 </p>
 
 </div>
+
 
 
 <div class="card">
@@ -877,11 +939,13 @@ SALE
 </section>
 
 
-<!-- ТОВАРЫ -->
+
+<!-- ===== ПРЕДЛОЖЕНИЯ ===== -->
 
 <section id="deals">
 
 <div class="container">
+
 
 <h2 class="section-title">
 Что сейчас выгодно купить
@@ -905,11 +969,15 @@ SALE
 от 9 990 ₽
 </div>
 
-<a class="deal-button" href="#">
+<a
+class="deal-button"
+href="#"
+>
 Посмотреть →
 </a>
 
 </div>
+
 
 
 <div class="deal">
@@ -926,11 +994,15 @@ SALE
 от 1 490 ₽
 </div>
 
-<a class="deal-button" href="#">
+<a
+class="deal-button"
+href="#"
+>
 Посмотреть →
 </a>
 
 </div>
+
 
 
 <div class="deal">
@@ -947,11 +1019,15 @@ SALE
 от 3 990 ₽
 </div>
 
-<a class="deal-button" href="#">
+<a
+class="deal-button"
+href="#"
+>
 Посмотреть →
 </a>
 
 </div>
+
 
 
 <div class="deal">
@@ -968,7 +1044,10 @@ SALE
 от 990 ₽
 </div>
 
-<a class="deal-button" href="#">
+<a
+class="deal-button"
+href="#"
+>
 Посмотреть →
 </a>
 
@@ -982,22 +1061,27 @@ SALE
 </section>
 
 
-<!-- ФИНАЛ -->
+
+<!-- ===== ФИНАЛЬНЫЙ CTA ===== -->
 
 <section>
 
 <div class="container">
 
+
 <div class="final">
+
 
 <h2>
 Не пропускайте хорошие цены
 </h2>
 
+
 <p>
 Откройте подборку актуальных предложений
 и выберите то, что действительно интересно.
 </p>
+
 
 <a
 class="main-button"
@@ -1007,6 +1091,7 @@ href="#deals"
 Перейти к предложениям →
 
 </a>
+
 
 </div>
 
@@ -1018,6 +1103,9 @@ href="#deals"
 </main>
 
 
+
+<!-- ===== FOOTER ===== -->
+
 <footer>
 
 <div class="container">
@@ -1028,468 +1116,6 @@ href="#deals"
 
 </footer>
 
-
-</body>
-</html>/* TOP */
-
-.top {
-    text-align: center;
-    padding: 12px 4px 0;
-}
-
-.logo {
-    width: 82px;
-    height: 82px;
-    margin: 0 auto 17px;
-    border-radius: 25px;
-    background: linear-gradient(135deg, #ff3b30, #ff6848);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    font-size: 39px;
-    font-weight: 900;
-    box-shadow: 0 14px 35px rgba(255, 65, 45, .25);
-}
-
-h1 {
-    font-size: 30px;
-    line-height: 1.12;
-    font-weight: 850;
-    letter-spacing: -.6px;
-    margin-bottom: 12px;
-}
-
-.subtitle {
-    color: #68717c;
-    font-size: 15px;
-    line-height: 1.5;
-    max-width: 420px;
-    margin: auto;
-}
-
-/* BENEFITS */
-
-.benefits {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 8px;
-    margin: 25px 0 23px;
-}
-
-.benefit {
-    background: rgba(255,255,255,.82);
-    border: 1px solid rgba(0,0,0,.045);
-    border-radius: 15px;
-    padding: 13px 7px;
-    text-align: center;
-    box-shadow: 0 5px 18px rgba(30,40,55,.05);
-}
-
-.benefit-icon {
-    font-size: 21px;
-    margin-bottom: 6px;
-}
-
-.benefit-text {
-    font-size: 11.5px;
-    font-weight: 650;
-    line-height: 1.25;
-    color: #59616c;
-}
-
-/* MAIN TELEGRAM */
-
-.main-link {
-    display: block;
-    text-decoration: none;
-    color: #fff;
-    background: linear-gradient(135deg, #159bd7, #0088cc);
-    border-radius: 20px;
-    padding: 19px;
-    box-shadow: 0 13px 30px rgba(0, 136, 204, .24);
-    position: relative;
-    overflow: hidden;
-    transition: transform .2s ease, box-shadow .2s ease;
-}
-
-.main-link:before {
-    content: "";
-    position: absolute;
-    width: 180px;
-    height: 180px;
-    right: -70px;
-    top: -90px;
-    background: rgba(255,255,255,.12);
-    border-radius: 50%;
-}
-
-.main-link:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 17px 35px rgba(0,136,204,.3);
-}
-
-.main-content {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    position: relative;
-}
-
-.telegram-icon {
-    width: 52px;
-    height: 52px;
-    flex: 0 0 52px;
-    border-radius: 16px;
-    background: rgba(255,255,255,.18);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 25px;
-}
-
-.main-title {
-    font-size: 18px;
-    font-weight: 800;
-    margin-bottom: 4px;
-}
-
-.main-description {
-    font-size: 13px;
-    opacity: .9;
-    line-height: 1.35;
-}
-
-.main-arrow {
-    margin-left: auto;
-    font-size: 27px;
-    opacity: .8;
-}
-
-/* LABEL */
-
-.label {
-    display: flex;
-    align-items: center;
-    gap: 9px;
-    margin: 24px 3px 10px;
-    color: #858d98;
-    font-size: 12px;
-    text-transform: uppercase;
-    font-weight: 750;
-    letter-spacing: .7px;
-}
-
-.label:after {
-    content: "";
-    height: 1px;
-    flex: 1;
-    background: #d9dee5;
-}
-
-/* LINKS */
-
-.links {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.link {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    gap: 13px;
-    padding: 14px;
-    border-radius: 17px;
-    background: rgba(255,255,255,.94);
-    border: 1px solid rgba(0,0,0,.045);
-    box-shadow: 0 5px 17px rgba(30,40,55,.06);
-    color: #17191d;
-    text-decoration: none;
-    transition: transform .18s ease, box-shadow .18s ease;
-}
-
-.link:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 23px rgba(30,40,55,.11);
-}
-
-.icon {
-    width: 45px;
-    height: 45px;
-    flex: 0 0 45px;
-    border-radius: 13px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 800;
-    font-size: 18px;
-}
-
-.vk {
-    background: #e9f1ff;
-    color: #2787f5;
-}
-
-.max {
-    background: #f0eaff;
-    color: #7957d5;
-}
-
-.bot {
-    background: #fff0e7;
-    font-size: 20px;
-}
-
-.text {
-    min-width: 0;
-    flex: 1;
-}
-
-.title {
-    font-size: 15px;
-    font-weight: 750;
-    margin-bottom: 3px;
-}
-
-.description {
-    color: #89919b;
-    font-size: 12.5px;
-    line-height: 1.3;
-}
-
-.arrow {
-    font-size: 22px;
-    color: #a5acb5;
-}
-
-/* FOOTER */
-
-.footer {
-    text-align: center;
-    margin: 25px 0 5px;
-    color: #a0a7af;
-    font-size: 11.5px;
-}
-
-/* ANIMATION */
-
-@keyframes appear {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.top,
-.benefits,
-.main-link,
-.label,
-.link {
-    animation: appear .5s ease both;
-}
-
-.benefits { animation-delay: .05s; }
-.main-link { animation-delay: .1s; }
-.label { animation-delay: .15s; }
-.link:nth-child(1) { animation-delay: .2s; }
-.link:nth-child(2) { animation-delay: .25s; }
-.link:nth-child(3) { animation-delay: .3s; }
-.link:nth-child(4) { animation-delay: .35s; }
-
-@media (max-width: 380px) {
-
-    h1 {
-        font-size: 26px;
-    }
-
-    .benefits {
-        gap: 6px;
-    }
-
-    .benefit {
-        padding: 11px 5px;
-    }
-
-    .benefit-text {
-        font-size: 10.5px;
-    }
-}
-</style>
-</head>
-
-<body>
-
-<div class="page">
-
-    <section class="top">
-
-        <div class="logo">%</div>
-
-        <h1>Все скидки<br>в одном месте</h1>
-
-        <p class="subtitle">
-            Актуальные промокоды, акции и выгодные предложения.
-            Подписывайтесь на удобную площадку и не пропускайте лучшие цены.
-        </p>
-
-    </section>
-
-
-    <section class="benefits">
-
-        <div class="benefit">
-            <div class="benefit-icon">💰</div>
-            <div class="benefit-text">Выгодные цены</div>
-        </div>
-
-        <div class="benefit">
-            <div class="benefit-icon">🏷️</div>
-            <div class="benefit-text">Промокоды</div>
-        </div>
-
-        <div class="benefit">
-            <div class="benefit-icon">⚡</div>
-            <div class="benefit-text">Новые акции</div>
-        </div>
-
-    </section>
-
-
-    <!-- ОСНОВНОЙ TELEGRAM -->
-
-    <a class="main-link"
-       href="https://t.me/zdiscounterr"
-       target="_blank"
-       rel="noopener noreferrer">
-
-        <div class="main-content">
-
-            <div class="telegram-icon">✈</div>
-
-            <div>
-                <div class="main-title">
-                    Наш Telegram-канал
-                </div>
-
-                <div class="main-description">
-                    Скидки, промокоды и лучшие предложения
-                </div>
-            </div>
-
-            <div class="main-arrow">›</div>
-
-        </div>
-
-    </a>
-
-
-    <!-- СОЦСЕТИ -->
-
-    <div class="label">
-        Другие площадки
-    </div>
-
-    <div class="links">
-
-        <a class="link"
-           href="https://vk.com/actualpromocode"
-           target="_blank"
-           rel="noopener noreferrer">
-
-            <div class="icon vk">VK</div>
-
-            <div class="text">
-                <div class="title">ВКонтакте</div>
-                <div class="description">
-                    Актуальные промокоды и скидки
-                </div>
-            </div>
-
-            <div class="arrow">›</div>
-
-        </a>
-
-
-        <a class="link"
-           href="https://max.ru/actualpromocode"
-           target="_blank"
-           rel="noopener noreferrer">
-
-            <div class="icon max">M</div>
-
-            <div class="text">
-                <div class="title">MAX</div>
-                <div class="description">
-                    Скидки и выгодные предложения
-                </div>
-            </div>
-
-            <div class="arrow">›</div>
-
-        </a>
-
-    </div>
-
-
-    <!-- БОТЫ -->
-
-    <div class="label">
-        Telegram-боты
-    </div>
-
-    <div class="links">
-
-        <a class="link"
-           href="https://t.me/nachalavy_bot"
-           target="_blank"
-           rel="noopener noreferrer">
-
-            <div class="icon bot">🤖</div>
-
-            <div class="text">
-                <div class="title">Бот со скидками</div>
-                <div class="description">
-                    Поиск выгодных предложений
-                </div>
-            </div>
-
-            <div class="arrow">›</div>
-
-        </a>
-
-
-        <a class="link"
-           href="https://t.me/actual_promokodbot"
-           target="_blank"
-           rel="noopener noreferrer">
-
-            <div class="icon bot">🤖</div>
-
-            <div class="text">
-                <div class="title">Бот промокодов</div>
-                <div class="description">
-                    Актуальные промокоды и скидки
-                </div>
-            </div>
-
-            <div class="arrow">›</div>
-
-        </a>
-
-    </div>
-
-
-    <div class="footer">
-        Скидки • Промокоды • Акции
-    </div>
-
-</div>
 
 </body>
 </html>
