@@ -2,545 +2,263 @@
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Промокоды и скидки — выгодные предложения</title>
-
-<meta name="description" content="Скидки и выгодные предложения на популярные бренды AliExpress. Xiaomi, OnePlus, Realme, Honor, Dreame, Roborock и другие.">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Промокоды и скидки</title>
+<meta name="description" content="Актуальные скидки, промокоды и акции на популярные бренды">
 
 <style>
-*{
-    box-sizing:border-box;
-    margin:0;
-    padding:0;
-}
-
-html{
-    scroll-behavior:smooth;
-}
-
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
 body{
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
-    background:#f5f6f8;
-    color:#15171b;
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+background:#f5f6f8;color:#15171b
 }
-
-/* HEADER */
+a{text-decoration:none;color:inherit}
 
 .header{
-    background:#fff;
-    border-bottom:1px solid #e9eaed;
-    position:sticky;
-    top:0;
-    z-index:100;
+background:#fff;border-bottom:1px solid #e7e8eb;
+position:sticky;top:0;z-index:20
 }
-
-.header-inner{
-    max-width:1180px;
-    margin:auto;
-    padding:14px 20px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
+.header-in{
+max-width:1180px;margin:auto;padding:12px 18px;
+display:flex;align-items:center;justify-content:space-between
 }
-
-.logo{
-    display:flex;
-    align-items:center;
-    gap:10px;
-    text-decoration:none;
-    color:#111;
-}
-
+.logo{display:flex;align-items:center;gap:10px}
 .logo-icon{
-    width:40px;
-    height:40px;
-    border-radius:12px;
-    background:linear-gradient(135deg,#ff3030,#ff6a00);
-    color:#fff;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:22px;
-    font-weight:900;
+width:40px;height:40px;border-radius:12px;
+background:linear-gradient(135deg,#ff3030,#ff6900);
+color:#fff;display:flex;align-items:center;
+justify-content:center;font-size:22px;font-weight:900
 }
-
-.logo-title{
-    font-size:17px;
-    font-weight:800;
+.logo-title{font-size:17px;font-weight:800}
+.logo-sub{font-size:11px;color:#858993;margin-top:2px}
+.top-btn{
+background:#17191d;color:#fff;padding:10px 15px;
+border-radius:11px;font-size:13px;font-weight:700
 }
-
-.logo-sub{
-    font-size:11px;
-    color:#858993;
-}
-
-.telegram-top{
-    background:#17191d;
-    color:#fff;
-    text-decoration:none;
-    padding:10px 15px;
-    border-radius:10px;
-    font-size:13px;
-    font-weight:700;
-}
-
-/* HERO */
 
 .hero{
-    background:
-        radial-gradient(circle at 10% 20%,rgba(255,55,45,.12),transparent 35%),
-        radial-gradient(circle at 90% 30%,rgba(255,130,0,.10),transparent 35%),
-        #fff;
-    border-bottom:1px solid #e9eaed;
+background:
+radial-gradient(circle at 10% 20%,rgba(255,55,45,.12),transparent 35%),
+radial-gradient(circle at 90% 30%,rgba(255,130,0,.11),transparent 35%),
+#fff;border-bottom:1px solid #e7e8eb
 }
-
-.hero-inner{
-    max-width:1180px;
-    margin:auto;
-    padding:65px 20px 55px;
-    text-align:center;
+.hero-in{
+max-width:1180px;margin:auto;text-align:center;
+padding:58px 18px 52px
 }
-
-.hero-label{
-    display:inline-flex;
-    align-items:center;
-    gap:7px;
-    background:#fff0ee;
-    color:#ed342b;
-    border:1px solid #ffd9d5;
-    border-radius:30px;
-    padding:8px 14px;
-    font-size:12px;
-    font-weight:800;
+.label{
+display:inline-block;background:#fff0ee;color:#ed342b;
+border:1px solid #ffd8d3;border-radius:30px;
+padding:8px 14px;font-size:12px;font-weight:800
 }
-
 .hero h1{
-    font-size:clamp(38px,6vw,64px);
-    line-height:1;
-    letter-spacing:-2.8px;
-    margin:20px auto 15px;
-    max-width:800px;
+font-size:clamp(40px,6vw,66px);line-height:1;
+letter-spacing:-3px;margin:20px auto 16px
+}
+.hero h1 span{color:#ef332b}
+.hero p{
+max-width:680px;margin:auto;color:#6e737d;
+font-size:17px;line-height:1.55
+}
+.hero-btn{
+display:inline-block;margin-top:25px;
+background:linear-gradient(135deg,#ff3430,#ff641b);
+color:#fff;padding:15px 25px;border-radius:12px;
+font-size:14px;font-weight:800;
+box-shadow:0 12px 30px rgba(255,60,35,.22)
 }
 
-.hero h1 span{
-    color:#ef332b;
+.main{max-width:1180px;margin:auto;padding:42px 18px 70px}
+.head{
+display:flex;justify-content:space-between;
+align-items:end;gap:20px;margin-bottom:20px
 }
-
-.hero-text{
-    max-width:650px;
-    margin:auto;
-    color:#6e737d;
-    font-size:17px;
-    line-height:1.55;
-}
-
-.hero-button{
-    display:inline-block;
-    margin-top:25px;
-    background:linear-gradient(135deg,#ff3430,#ff641b);
-    color:#fff;
-    text-decoration:none;
-    padding:15px 24px;
-    border-radius:12px;
-    font-size:14px;
-    font-weight:800;
-    box-shadow:0 12px 30px rgba(255,60,35,.22);
-    transition:.2s;
-}
-
-.hero-button:hover{
-    transform:translateY(-2px);
-}
-
-/* MAIN */
-
-.main{
-    max-width:1180px;
-    margin:auto;
-    padding:40px 20px 70px;
-}
-
-.section-head{
-    display:flex;
-    justify-content:space-between;
-    align-items:end;
-    gap:20px;
-    margin-bottom:20px;
-}
-
-.section-title{
-    font-size:28px;
-    letter-spacing:-1px;
-}
-
-.section-subtitle{
-    color:#8a8f98;
-    font-size:13px;
-    margin-top:5px;
-}
-
-/* SEARCH */
-
+.title{font-size:28px;letter-spacing:-1px}
+.sub{color:#8a8f98;font-size:13px;margin-top:5px}
 .search{
-    width:280px;
-    border:1px solid #dddfe4;
-    background:#fff;
-    border-radius:12px;
-    padding:12px 15px;
-    font-size:14px;
-    outline:none;
+width:285px;border:1px solid #dddfe4;background:#fff;
+border-radius:12px;padding:12px 15px;font-size:14px;
+outline:none
 }
-
 .search:focus{
-    border-color:#ff5146;
-    box-shadow:0 0 0 3px rgba(255,80,70,.08);
+border-color:#ff5146;
+box-shadow:0 0 0 3px rgba(255,80,70,.08)
 }
 
-/* CATEGORIES */
-
-.category{
-    margin-top:38px;
+.category{margin-top:38px}
+.cat-title{
+font-size:19px;margin-bottom:14px;
+display:flex;align-items:center;gap:8px
 }
 
-.category-title{
-    display:flex;
-    align-items:center;
-    gap:9px;
-    font-size:19px;
-    margin-bottom:14px;
-}
-
-.category-title span{
-    color:#8b9098;
-    font-size:12px;
-    font-weight:500;
-}
-
-/* BRAND GRID */
-
-.brand-grid{
-    display:grid;
-    grid-template-columns:repeat(5,1fr);
-    gap:13px;
+.grid{
+display:grid;grid-template-columns:repeat(5,1fr);gap:13px
 }
 
 .brand{
-    display:block;
-    text-decoration:none;
-    color:#15171b;
-    background:#fff;
-    border:1px solid #e5e7eb;
-    border-radius:16px;
-    padding:18px;
-    min-height:145px;
-    transition:.2s;
-    position:relative;
-    overflow:hidden;
+display:block;position:relative;overflow:hidden;
+background:#fff;border:1px solid var(--border);
+border-radius:18px;padding:18px;min-height:166px;
+transition:.22s
 }
-
+.brand:before{
+content:"";position:absolute;left:0;top:0;
+width:100%;height:4px;background:var(--color)
+}
 .brand:hover{
-    transform:translateY(-4px);
-    border-color:#ffaaa5;
-    box-shadow:0 12px 30px rgba(30,30,30,.08);
+transform:translateY(-5px);
+border-color:var(--color);
+box-shadow:0 14px 32px rgba(20,20,20,.09)
 }
 
 .brand-logo{
-    height:48px;
-    width:48px;
-    border-radius:13px;
-    background:#f1f2f4;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-weight:900;
-    font-size:17px;
-    margin-bottom:14px;
+width:54px;height:54px;border-radius:15px;
+display:flex;align-items:center;justify-content:center;
+margin-bottom:14px;background:var(--bg);
+border:1px solid var(--border);transition:.2s
+}
+.brand-logo img{
+width:34px;height:34px;object-fit:contain
+}
+.brand:hover .brand-logo{transform:scale(1.07)}
+.brand-name{font-size:16px;font-weight:800;padding-right:22px}
+.brand-desc{
+color:#858a94;font-size:11px;line-height:1.4;
+margin-top:5px;max-width:190px
+}
+.arrow{
+position:absolute;right:14px;bottom:14px;
+width:29px;height:29px;border-radius:50%;
+background:var(--bg);color:var(--color);
+display:flex;align-items:center;justify-content:center;
+font-size:15px;font-weight:700
 }
 
-.brand-name{
-    font-size:16px;
-    font-weight:800;
+/* Фирменные цвета */
+.xiaomi{--color:#ff6900;--bg:#fff1e8;--border:#ffd1b2}
+.oneplus{--color:#f5010c;--bg:#fff0f0;--border:#ffcaca}
+.realme{--color:#ffc915;--bg:#fffbea;--border:#f5e7a4}
+.oppo{--color:#2d683d;--bg:#eef9f1;--border:#c4e4cc}
+.honor{--color:#6546d8;--bg:#f3f0ff;--border:#d8d0ff}
+.vivo{--color:#415fff;--bg:#eef3ff;--border:#cbd8ff}
+.samsung{--color:#1428a0;--bg:#eef2ff;--border:#cbd3ff}
+.lenovo{--color:#e2231a;--bg:#fff0ef;--border:#ffc9c6}
+.seventy{--color:#ff5a00;--bg:#fff2ea;--border:#ffd1ba}
+.ugreen{--color:#00a870;--bg:#edf9f4;--border:#bfe7d5}
+.baseus{--color:#0066ff;--bg:#eef4ff;--border:#cbdcff}
+.lining{--color:#d71920;--bg:#fff0f0;--border:#ffc9c9}
+.roborock{--color:#222;--bg:#f1f1f1;--border:#d9d9d9}
+.dreame{--color:#6546d8;--bg:#f3f0ff;--border:#d9d0ff}
+.nintendo{--color:#e60012;--bg:#fff0f1;--border:#ffc7cb}
+
+.telegram{
+margin:55px 0 20px;
+background:linear-gradient(135deg,#17191d,#292d34);
+color:#fff;border-radius:24px;padding:32px;
+display:flex;justify-content:space-between;
+align-items:center;gap:25px;overflow:hidden
+}
+.tg-label{
+color:#ff8178;font-size:11px;font-weight:800;
+text-transform:uppercase
+}
+.telegram h2{font-size:27px;margin:8px 0}
+.telegram p{
+color:#aeb3bc;font-size:14px;
+line-height:1.5;max-width:600px
+}
+.tg-btn{
+background:#fff;color:#15171b;
+padding:14px 20px;border-radius:11px;
+font-size:13px;font-weight:800;white-space:nowrap
 }
 
-.brand-description{
-    color:#858a94;
-    font-size:11px;
-    line-height:1.35;
-    margin-top:5px;
-}
-
-.brand-arrow{
-    position:absolute;
-    right:14px;
-    bottom:14px;
-    width:27px;
-    height:27px;
-    border-radius:50%;
-    background:#f3f4f6;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-size:14px;
-}
-
-/* TELEGRAM BLOCK */
-
-.telegram-block{
-    margin:55px 0 20px;
-    background:
-        radial-gradient(circle at 90% 10%,rgba(255,255,255,.18),transparent 30%),
-        linear-gradient(135deg,#17191d,#272b32);
-    color:#fff;
-    border-radius:24px;
-    padding:32px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    gap:25px;
-    overflow:hidden;
-    position:relative;
-}
-
-.telegram-block:after{
-    content:"%";
-    position:absolute;
-    right:30px;
-    top:-45px;
-    font-size:180px;
-    font-weight:900;
-    color:rgba(255,255,255,.035);
-}
-
-.telegram-content{
-    position:relative;
-    z-index:2;
-}
-
-.telegram-label{
-    color:#ff8178;
-    font-size:11px;
-    font-weight:800;
-    text-transform:uppercase;
-}
-
-.telegram-block h2{
-    font-size:27px;
-    margin:8px 0;
-}
-
-.telegram-block p{
-    color:#aeb3bc;
-    font-size:14px;
-    line-height:1.5;
-    max-width:580px;
-}
-
-.telegram-button{
-    position:relative;
-    z-index:2;
-    flex-shrink:0;
-    background:#fff;
-    color:#15171b;
-    padding:14px 20px;
-    border-radius:11px;
-    text-decoration:none;
-    font-size:13px;
-    font-weight:800;
-}
-
-/* RESOURCES */
-
-.resources{
-    margin-top:45px;
-}
-
+.resources{margin-top:45px}
 .resource-grid{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:13px;
+display:grid;grid-template-columns:repeat(4,1fr);
+gap:13px;margin-top:20px
 }
-
 .resource{
-    background:#fff;
-    border:1px solid #e5e7eb;
-    border-radius:17px;
-    padding:20px;
-    text-decoration:none;
-    color:#15171b;
-    transition:.2s;
+background:#fff;border:1px solid #e5e7eb;
+border-radius:17px;padding:20px;transition:.2s
 }
-
 .resource:hover{
-    transform:translateY(-3px);
-    box-shadow:0 10px 25px rgba(0,0,0,.06);
+transform:translateY(-4px);
+box-shadow:0 10px 25px rgba(0,0,0,.06)
 }
-
-.resource-icon{
-    width:43px;
-    height:43px;
-    border-radius:12px;
-    background:#f0f1f3;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:18px;
-    font-weight:900;
-    margin-bottom:14px;
+.r-icon{
+width:45px;height:45px;border-radius:13px;
+background:#f0f1f3;display:flex;
+align-items:center;justify-content:center;
+font-size:16px;font-weight:900;margin-bottom:14px
 }
-
-.resource h3{
-    font-size:15px;
-}
-
+.resource h3{font-size:15px}
 .resource p{
-    color:#858a94;
-    font-size:11px;
-    line-height:1.4;
-    margin-top:5px;
+color:#858a94;font-size:11px;
+line-height:1.4;margin-top:5px
 }
-
-.resource-button{
-    margin-top:15px;
-    color:#ef372e;
-    font-size:12px;
-    font-weight:800;
+.r-btn{
+margin-top:15px;color:#ef372e;
+font-size:12px;font-weight:800
 }
-
-/* FOOTER */
 
 .footer{
-    background:#17191d;
-    color:#fff;
-    padding:30px 20px;
+background:#17191d;color:#fff;
+padding:30px 18px;text-align:center
 }
+.footer-title{font-weight:800;font-size:15px}
+.footer-text{color:#81868f;font-size:11px;margin-top:7px}
 
-.footer-inner{
-    max-width:1180px;
-    margin:auto;
-    text-align:center;
-}
-
-.footer-title{
-    font-weight:800;
-    font-size:15px;
-}
-
-.footer-text{
-    color:#81868f;
-    font-size:11px;
-    margin-top:7px;
-}
-
-/* HIDDEN SEARCH */
-
-.brand.hidden{
-    display:none;
-}
-
-/* MOBILE */
+.hidden{display:none!important}
 
 @media(max-width:950px){
-
-    .brand-grid{
-        grid-template-columns:repeat(3,1fr);
-    }
-
-    .resource-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
+.grid{grid-template-columns:repeat(3,1fr)}
+.resource-grid{grid-template-columns:repeat(2,1fr)}
 }
 
 @media(max-width:650px){
+.header-in{padding:11px 14px}
+.logo-icon{width:36px;height:36px}
+.logo-title{font-size:15px}
+.top-btn{padding:9px 11px;font-size:11px}
 
-    .header-inner{
-        padding:11px 14px;
-    }
+.hero-in{padding:45px 16px 40px}
+.hero h1{font-size:42px;letter-spacing:-2px}
+.hero p{font-size:15px}
 
-    .logo-icon{
-        width:36px;
-        height:36px;
-        border-radius:10px;
-    }
+.main{padding:30px 14px 50px}
+.head{display:block}
+.search{width:100%;margin-top:15px}
 
-    .logo-title{
-        font-size:15px;
-    }
+.grid{
+grid-template-columns:repeat(2,1fr);
+gap:9px
+}
+.brand{min-height:151px;padding:15px}
+.brand-logo{width:50px;height:50px}
+.brand-logo img{width:31px;height:31px}
+.brand-name{font-size:14px}
+.brand-desc{font-size:10px}
 
-    .telegram-top{
-        padding:9px 11px;
-        font-size:11px;
-    }
+.telegram{
+display:block;padding:25px 20px;
+margin-top:40px
+}
+.telegram h2{font-size:23px}
+.tg-btn{
+display:block;text-align:center;
+margin-top:20px
+}
 
-    .hero-inner{
-        padding:45px 16px 40px;
-    }
-
-    .hero h1{
-        letter-spacing:-2px;
-    }
-
-    .hero-text{
-        font-size:15px;
-    }
-
-    .main{
-        padding:30px 14px 50px;
-    }
-
-    .section-head{
-        display:block;
-    }
-
-    .search{
-        width:100%;
-        margin-top:15px;
-    }
-
-    .brand-grid{
-        grid-template-columns:repeat(2,1fr);
-        gap:9px;
-    }
-
-    .brand{
-        min-height:135px;
-        padding:15px;
-    }
-
-    .telegram-block{
-        display:block;
-        padding:25px 20px;
-        margin-top:40px;
-    }
-
-    .telegram-button{
-        display:block;
-        text-align:center;
-        margin-top:20px;
-    }
-
-    .resource-grid{
-        grid-template-columns:1fr;
-    }
-
-    .section-title{
-        font-size:24px;
-    }
+.resource-grid{grid-template-columns:1fr}
+.title{font-size:24px}
 }
 
 @media(max-width:380px){
-
-    .brand-grid{
-        grid-template-columns:1fr 1fr;
-    }
-
-    .brand-name{
-        font-size:14px;
-    }
-
-    .brand-description{
-        font-size:10px;
-    }
+.brand{min-height:145px;padding:13px}
+.brand-name{font-size:13px}
+.brand-desc{font-size:9px}
 }
 </style>
 </head>
@@ -548,358 +266,303 @@ body{
 <body>
 
 <header class="header">
-
-<div class="header-inner">
+<div class="header-in">
 
 <a href="#" class="logo">
-
 <div class="logo-icon">%</div>
-
 <div>
 <div class="logo-title">Промокоды</div>
 <div class="logo-sub">Скидки • Купоны • Акции</div>
 </div>
-
 </a>
 
-<a
-href="https://t.me/zdiscounterr"
-target="_blank"
-rel="noopener"
-class="telegram-top"
->
+<a href="https://t.me/zdiscounterr"
+target="_blank" rel="noopener" class="top-btn">
 🔥 Telegram
 </a>
 
 </div>
-
 </header>
 
-
 <section class="hero">
+<div class="hero-in">
 
-<div class="hero-inner">
-
-<div class="hero-label">
-🔥 Актуальные предложения
-</div>
+<div class="label">🔥 Актуальные предложения</div>
 
 <h1>
-Скидки на любимые
-<span>бренды</span>
+Скидки на любимые <span>бренды</span>
 </h1>
 
-<p class="hero-text">
+<p>
 Собрали страницы популярных брендов AliExpress,
-где сейчас можно посмотреть актуальные скидки,
+где можно посмотреть актуальные скидки,
 акции и выгодные предложения.
 </p>
 
-<a href="#brands" class="hero-button">
+<a href="#brands" class="hero-btn">
 Смотреть бренды ↓
 </a>
 
 </div>
-
 </section>
-
 
 <main class="main" id="brands">
 
-<div class="section-head">
+<div class="head">
+<div>
+<h2 class="title">🔥 Бренды со скидками</h2>
+<p class="sub">
+Выберите интересующий бренд и смотрите актуальные предложения
+</p>
+</div>
+
+<input id="search" class="search"
+type="text" placeholder="🔎 Найти бренд...">
+</div>
+
+
+<div class="category">
+
+<h3 class="cat-title">📱 Смартфоны и электроника</h3>
+
+<div class="grid">
+
+
+<a class="brand xiaomi"
+href="https://aliexpress.ru/promotions/sl/xiaomi_poco?presentationmode=push&hastoolbar=false&pageName=Promotions_1784&fusion=y"
+target="_blank" rel="noopener" data-name="xiaomi poco">
+
+<div class="brand-logo">
+<img src="https://cdn.simpleicons.org/xiaomi/FF6900" alt="Xiaomi">
+</div>
+<div class="brand-name">Xiaomi / POCO</div>
+<div class="brand-desc">Смартфоны, планшеты и гаджеты</div>
+<div class="arrow">→</div>
+</a>
+
+
+<a class="brand oneplus"
+href="https://aliexpress.ru/promotions/sl/oneplus?presentationmode=push&hastoolbar=false&pageName=Promotions_1790&fusion=y"
+target="_blank" rel="noopener" data-name="oneplus">
+
+<div class="brand-logo">
+<img src="https://cdn.simpleicons.org/oneplus/F5010C" alt="OnePlus">
+</div>
+<div class="brand-name">OnePlus</div>
+<div class="brand-desc">Смартфоны и устройства OnePlus</div>
+<div class="arrow">→</div>
+</a>
+
+
+<a class="brand realme"
+href="https://aliexpress.ru/promotions/sl/realme?presentationmode=push&hastoolbar=false&pageName=Promotions_1786&fusion=y"
+target="_blank" rel="noopener" data-name="realme">
+
+<div class="brand-logo">
+<img src="https://cdn.simpleicons.org/realme/FFC915" alt="realme">
+</div>
+<div class="brand-name">Realme</div>
+<div class="brand-desc">Смартфоны и электроника</div>
+<div class="arrow">→</div>
+</a>
+
+
+<a class="brand oppo"
+href="https://aliexpress.ru/promotions/sl/oppo?presentationmode=push&hastoolbar=false&pageName=Promotions_2581&fusion=y"
+target="_blank" rel="noopener" data-name="oppo">
+
+<div class="brand-logo">
+<img src="https://cdn.simpleicons.org/oppo/2D683D" alt="OPPO">
+</div>
+<div class="brand-name">OPPO</div>
+<div class="brand-desc">Смартфоны и гаджеты</div>
+<div class="arrow">→</div>
+</a>
+
+
+<a class="brand honor"
+href="https://aliexpress.ru/promotions/sl/honor?presentationmode=push&hastoolbar=false&pageName=Promotions_1839&fusion=y"
+target="_blank" rel="noopener" data-name="honor">
+
+<div class="brand-logo">
+<img src="https://cdn.simpleicons.org/honor/000000" alt="HONOR">
+</div>
+<div class="brand-name">HONOR</div>
+<div class="brand-desc">Смартфоны, планшеты и техника</div>
+<div class="arrow">→</div>
+</a>
+
+
+<a class="brand vivo"
+href="https://aliexpress.ru/promotions/sl/vivo?presentationmode=push&hastoolbar=false&pageName=Promotions_3087&fusion=y"
+target="_blank" rel="noopener" data-name="vivo">
+
+<div class="brand-logo">
+<img src="https://cdn.simpleicons.org/vivo/415FFF" alt="vivo">
+</div>
+<div class="brand-name">vivo</div>
+<div class="brand-desc">Смартфоны и аксессуары</div>
+<div class="arrow">→</div>
+</a>
+
+
+<a class="brand samsung"
+href="https://aliexpress.ru/promotions/sl/samsung?presentationmode=push&hastoolbar=false&pageName=Promotions_3216&fusion=y"
+target="_blank" rel="noopener" data-name="samsung">
+
+<div class="brand-logo">
+<img src="https://cdn.simpleicons.org/samsung/1428A0" alt="Samsung">
+</div>
+<div class="brand-name">Samsung</div>
+<div class="brand-desc">Электроника и техника</div>
+<div class="arrow">→</div>
+</a>
+
+
+<a class="brand lenovo"
+href="https://aliexpress.ru/promotions/sl/lenovo_328?presentationmode=push&hastoolbar=false&pageName=Promotions_1868&fusion=y"
+target="_blank" rel="noopener" data-name="lenovo">
+
+<div class="brand-logo">
+<img src="https://cdn.simpleicons.org/lenovo/E2231A" alt="Lenovo">
+</div>
+<div class="brand-name">Lenovo</div>
+<div class="brand-desc">Ноутбуки, планшеты и гаджеты</div>
+<div class="arrow">→</div>
+</a>
+
+</div>
+</div>
+
+
+<div class="category">
+
+<h3 class="cat-title">🏠 Техника и гаджеты</h3>
+
+<div class="grid">
+
+
+<a class="brand seventy"
+href="https://aliexpress.ru/promotions/sl/70mai?presentationmode=push&hastoolbar=false&pageName=Promotions_2486&fusion=y"
+target="_blank" rel="noopener" data-name="70mai">
+
+<div class="brand-logo">
+<img src="https://cdn.simpleicons.org/70mai/FF5A00" alt="70mai">
+</div>
+<div class="brand-name">70mai</div>
+<div class="brand-desc">Видеорегистраторы и автоэлектроника</div>
+<div class="arrow">→</div>
+</a>
+
+
+<a class="brand ugreen"
+href="https://aliexpress.ru/promotions/sl/sbd_ugreen_17022025?presentationmode=push&hastoolbar=false&pageName=Promotions_1780&fusion=y"
+target="_blank" rel="noopener" data-name="ugreen">
+
+<div class="brand-logo">
+<img src="https://cdn.simpleicons.org/ugreen/00A870" alt="UGREEN">
+</div>
+<div class="brand-name">UGREEN</div>
+<div class="brand-desc">Зарядки, кабели и аксессуары</div>
+<div class="arrow">→</div>
+</a>
+
+
+<a class="brand baseus"
+href="https://aliexpress.ru/promotions/sl/sbd_baseus_17022025?presentationmode=push&hastoolbar=false&pageName=Promotions_1782&fusion=y"
+target="_blank" rel="noopener" data-name="baseus">
+
+<div class="brand-logo">
+<img src="https://cdn.simpleicons.org/baseus/0066FF" alt="Baseus">
+</div>
+<div class="brand-name">Baseus</div>
+<div class="brand-desc">Аксессуары и электроника</div>
+<div class="arrow">→</div>
+</a>
+
+
+<a class="brand roborock"
+href="https://aliexpress.ru/promotions/sl/roborock_sbd?presentationmode=push&hastoolbar=false&pageName=Promotions_1848&fusion=y"
+target="_blank" rel="noopener" data-name="roborock">
+
+<div class="brand-logo">
+<img src="https://cdn.simpleicons.org/roborock/000000" alt="Roborock">
+</div>
+<div class="brand-name">Roborock</div>
+<div class="brand-desc">Роботы-пылесосы и техника</div>
+<div class="arrow">→</div>
+</a>
+
+
+<a class="brand dreame"
+href="https://aliexpress.ru/promotions/sl/ssbd_dreame_01112024?presentationmode=push&hastoolbar=false&pageName=Promotions_1238&fusion=y"
+target="_blank" rel="noopener" data-name="dreame">
+
+<div class="brand-logo">
+<img src="https://cdn.simpleicons.org/dreame/6B4EFF" alt="Dreame">
+</div>
+<div class="brand-name">Dreame</div>
+<div class="brand-desc">Пылесосы и техника для дома</div>
+<div class="arrow">→</div>
+</a>
+
+</div>
+</div>
+
+<div class="category">
+
+<h3 class="cat-title">🎮 Спорт и развлечения</h3>
+
+<div class="grid">
+
+
+<a class="brand lining"
+href="https://aliexpress.ru/promotions/sl/lining_sbd?presentationmode=push&hastoolbar=false&pageName=Promotions_1900&fusion=y&page=1"
+target="_blank" rel="noopener" data-name="li ning lining">
+
+<div class="brand-logo">
+<img src="https://cdn.simpleicons.org/lining/D71920" alt="Li-Ning">
+</div>
+
+<div class="brand-name">Li-Ning</div>
+<div class="brand-desc">Спортивная одежда и обувь</div>
+<div class="arrow">→</div>
+
+</a>
+
+
+<a class="brand nintendo"
+href="https://aliexpress.ru/promotions/sl/nintendo?presentationmode=push&hastoolbar=false&pageName=Promotions_2506&fusion=y"
+target="_blank" rel="noopener" data-name="nintendo">
+
+<div class="brand-logo">
+<img src="https://cdn.simpleicons.org/nintendo/E60012" alt="Nintendo">
+</div>
+
+<div class="brand-name">Nintendo</div>
+<div class="brand-desc">Игры и игровая техника</div>
+<div class="arrow">→</div>
+
+</a>
+
+</div>
+</div>
+
+
+<div class="telegram">
 
 <div>
 
-<h2 class="section-title">
-🔥 Бренды со скидками
-</h2>
-
-<p class="section-subtitle">
-Выберите интересующий бренд и смотрите актуальные предложения
-</p>
-
-</div>
-
-<input
-type="text"
-id="search"
-class="search"
-placeholder="🔎 Найти бренд..."
->
-
-</div>
-
-
-<!-- СМАРТФОНЫ -->
-
-<div class="category">
-
-<h3 class="category-title">
-📱 Смартфоны и электроника
-</h3>
-
-<div class="brand-grid">
-
-
-<a class="brand"
-href="https://aliexpress.ru/promotions/sl/xiaomi_poco?presentationmode=push&hastoolbar=false&pageName=Promotions_1784&fusion=y"
-target="_blank"
-rel="noopener"
-data-name="xiaomi poco">
-
-<div class="brand-logo">MI</div>
-<div class="brand-name">Xiaomi / POCO</div>
-<div class="brand-description">Смартфоны, планшеты и гаджеты</div>
-<div class="brand-arrow">→</div>
-
-</a>
-
-
-<a class="brand"
-href="https://aliexpress.ru/promotions/sl/oneplus?presentationmode=push&hastoolbar=false&pageName=Promotions_1790&fusion=y"
-target="_blank"
-rel="noopener"
-data-name="oneplus">
-
-<div class="brand-logo">1+</div>
-<div class="brand-name">OnePlus</div>
-<div class="brand-description">Смартфоны и устройства OnePlus</div>
-<div class="brand-arrow">→</div>
-
-</a>
-
-
-<a class="brand"
-href="https://aliexpress.ru/promotions/sl/realme?presentationmode=push&hastoolbar=false&pageName=Promotions_1786&fusion=y"
-target="_blank"
-rel="noopener"
-data-name="realme">
-
-<div class="brand-logo">R</div>
-<div class="brand-name">Realme</div>
-<div class="brand-description">Смартфоны и электроника</div>
-<div class="brand-arrow">→</div>
-
-</a>
-
-
-<a class="brand"
-href="https://aliexpress.ru/promotions/sl/oppo?presentationmode=push&hastoolbar=false&pageName=Promotions_2581&fusion=y"
-target="_blank"
-rel="noopener"
-data-name="oppo">
-
-<div class="brand-logo">OPPO</div>
-<div class="brand-name">OPPO</div>
-<div class="brand-description">Смартфоны и гаджеты</div>
-<div class="brand-arrow">→</div>
-
-</a>
-
-
-<a class="brand"
-href="https://aliexpress.ru/promotions/sl/honor?presentationmode=push&hastoolbar=false&pageName=Promotions_1839&fusion=y"
-target="_blank"
-rel="noopener"
-data-name="honor">
-
-<div class="brand-logo">HON</div>
-<div class="brand-name">HONOR</div>
-<div class="brand-description">Смартфоны, планшеты и техника</div>
-<div class="brand-arrow">→</div>
-
-</a>
-
-
-<a class="brand"
-href="https://aliexpress.ru/promotions/sl/vivo?presentationmode=push&hastoolbar=false&pageName=Promotions_3087&fusion=y"
-target="_blank"
-rel="noopener"
-data-name="vivo">
-
-<div class="brand-logo">vivo</div>
-<div class="brand-name">vivo</div>
-<div class="brand-description">Смартфоны и аксессуары</div>
-<div class="brand-arrow">→</div>
-
-</a>
-
-
-<a class="brand"
-href="https://aliexpress.ru/promotions/sl/samsung?presentationmode=push&hastoolbar=false&pageName=Promotions_3216&fusion=y"
-target="_blank"
-rel="noopener"
-data-name="samsung">
-
-<div class="brand-logo">S</div>
-<div class="brand-name">Samsung</div>
-<div class="brand-description">Электроника и техника</div>
-<div class="brand-arrow">→</div>
-
-</a>
-
-
-<a class="brand"
-href="https://aliexpress.ru/promotions/sl/lenovo_328?presentationmode=push&hastoolbar=false&pageName=Promotions_1868&fusion=y"
-target="_blank"
-rel="noopener"
-data-name="lenovo">
-
-<div class="brand-logo">L</div>
-<div class="brand-name">Lenovo</div>
-<div class="brand-description">Ноутбуки, планшеты и гаджеты</div>
-<div class="brand-arrow">→</div>
-
-</a>
-
-</div>
-</div>
-
-
-<!-- ТЕХНИКА -->
-
-<div class="category">
-
-<h3 class="category-title">
-🏠 Техника и гаджеты
-</h3>
-
-<div class="brand-grid">
-
-
-<a class="brand"
-href="https://aliexpress.ru/promotions/sl/70mai?presentationmode=push&hastoolbar=false&pageName=Promotions_2486&fusion=y"
-target="_blank"
-rel="noopener"
-data-name="70mai">
-
-<div class="brand-logo">70</div>
-<div class="brand-name">70mai</div>
-<div class="brand-description">Видеорегистраторы и автоэлектроника</div>
-<div class="brand-arrow">→</div>
-
-</a>
-
-
-<a class="brand"
-href="https://aliexpress.ru/promotions/sl/sbd_ugreen_17022025?presentationmode=push&hastoolbar=false&pageName=Promotions_1780&fusion=y"
-target="_blank"
-rel="noopener"
-data-name="ugreen">
-
-<div class="brand-logo">U</div>
-<div class="brand-name">UGREEN</div>
-<div class="brand-description">Зарядки, кабели и аксессуары</div>
-<div class="brand-arrow">→</div>
-
-</a>
-
-
-<a class="brand"
-href="https://aliexpress.ru/promotions/sl/sbd_baseus_17022025?presentationmode=push&hastoolbar=false&pageName=Promotions_1782&fusion=y"
-target="_blank"
-rel="noopener"
-data-name="baseus">
-
-<div class="brand-logo">B</div>
-<div class="brand-name">Baseus</div>
-<div class="brand-description">Аксессуары и электроника</div>
-<div class="brand-arrow">→</div>
-
-</a>
-
-
-<a class="brand"
-href="https://aliexpress.ru/promotions/sl/roborock_sbd?presentationmode=push&hastoolbar=false&pageName=Promotions_1848&fusion=y"
-target="_blank"
-rel="noopener"
-data-name="roborock">
-
-<div class="brand-logo">R</div>
-<div class="brand-name">Roborock</div>
-<div class="brand-description">Роботы-пылесосы и техника</div>
-<div class="brand-arrow">→</div>
-
-</a>
-
-
-<a class="brand"
-href="https://aliexpress.ru/promotions/sl/ssbd_dreame_01112024?presentationmode=push&hastoolbar=false&pageName=Promotions_1238&fusion=y"
-target="_blank"
-rel="noopener"
-data-name="dreame">
-
-<div class="brand-logo">D</div>
-<div class="brand-name">Dreame</div>
-<div class="brand-description">Пылесосы и техника для дома</div>
-<div class="brand-arrow">→</div>
-
-</a>
-
-</div>
-</div>
-
-
-<!-- ДРУГИЕ -->
-
-<div class="category">
-
-<h3 class="category-title">
-🎮 Спорт и развлечения
-</h3>
-
-<div class="brand-grid">
-
-
-<a class="brand"
-href="https://aliexpress.ru/promotions/sl/lining_sbd?presentationmode=push&hastoolbar=false&pageName=Promotions_1900&fusion=y&page=1"
-target="_blank"
-rel="noopener"
-data-name="li ning lining">
-
-<div class="brand-logo">LN</div>
-<div class="brand-name">Li-Ning</div>
-<div class="brand-description">Спортивная одежда и обувь</div>
-<div class="brand-arrow">→</div>
-
-</a>
-
-
-<a class="brand"
-href="https://aliexpress.ru/promotions/sl/nintendo?presentationmode=push&hastoolbar=false&pageName=Promotions_2506&fusion=y"
-target="_blank"
-rel="noopener"
-data-name="nintendo">
-
-<div class="brand-logo">N</div>
-<div class="brand-name">Nintendo</div>
-<div class="brand-description">Игры и игровая техника</div>
-<div class="brand-arrow">→</div>
-
-</a>
-
-</div>
-</div>
-
-
-<!-- TELEGRAM -->
-
-<div class="telegram-block">
-
-<div class="telegram-content">
-
-<div class="telegram-label">
+<div class="tg-label">
 Не пропускайте новые скидки
 </div>
 
-<h2>
-🔥 Все новые предложения — в Telegram
-</h2>
+<h2>🔥 Все новые предложения — в Telegram</h2>
 
 <p>
 Каждый день публикуем промокоды, купоны,
 скидки и интересные товары.
-Подписывайтесь, чтобы не искать выгодные цены самостоятельно.
+Подписывайтесь, чтобы не пропускать выгодные цены.
 </p>
 
 </div>
@@ -908,7 +571,7 @@ data-name="nintendo">
 href="https://t.me/zdiscounterr"
 target="_blank"
 rel="noopener"
-class="telegram-button"
+class="tg-btn"
 >
 Перейти в Telegram →
 </a>
@@ -916,15 +579,11 @@ class="telegram-button"
 </div>
 
 
-<!-- РЕСУРСЫ -->
-
 <div class="resources">
 
-<h2 class="section-title">
-📲 Наши площадки и боты
-</h2>
+<h2 class="title">📲 Наши площадки и боты</h2>
 
-<p class="section-subtitle">
+<p class="sub">
 Выберите удобный способ получать скидки
 </p>
 
@@ -939,7 +598,7 @@ target="_blank"
 rel="noopener"
 >
 
-<div class="resource-icon">VK</div>
+<div class="r-icon">VK</div>
 
 <h3>ВКонтакте</h3>
 
@@ -947,8 +606,8 @@ rel="noopener"
 Новости, скидки и промокоды
 </p>
 
-<div class="resource-button">
-Открыть → 
+<div class="r-btn">
+Открыть →
 </div>
 
 </a>
@@ -961,7 +620,7 @@ target="_blank"
 rel="noopener"
 >
 
-<div class="resource-icon">MAX</div>
+<div class="r-icon">MAX</div>
 
 <h3>Канал в MAX</h3>
 
@@ -969,7 +628,7 @@ rel="noopener"
 Свежие предложения и скидки
 </p>
 
-<div class="resource-button">
+<div class="r-btn">
 Открыть →
 </div>
 
@@ -983,7 +642,7 @@ target="_blank"
 rel="noopener"
 >
 
-<div class="resource-icon">🤖</div>
+<div class="r-icon">🤖</div>
 
 <h3>Бот со скидками</h3>
 
@@ -991,7 +650,7 @@ rel="noopener"
 Получайте интересные предложения
 </p>
 
-<div class="resource-button">
+<div class="r-btn">
 Запустить →
 </div>
 
@@ -1005,7 +664,7 @@ target="_blank"
 rel="noopener"
 >
 
-<div class="resource-icon">🎟️</div>
+<div class="r-icon">🎟️</div>
 
 <h3>Бот с промокодами</h3>
 
@@ -1013,7 +672,7 @@ rel="noopener"
 Промокоды и выгодные предложения
 </p>
 
-<div class="resource-button">
+<div class="r-btn">
 Запустить →
 </div>
 
@@ -1028,8 +687,6 @@ rel="noopener"
 
 <footer class="footer">
 
-<div class="footer-inner">
-
 <div class="footer-title">
 Промокоды • Купоны • Скидки
 </div>
@@ -1038,31 +695,29 @@ rel="noopener"
 Выгодные предложения на популярные бренды
 </div>
 
-</div>
-
 </footer>
 
 
 <script>
 
-const search = document.getElementById("search");
-const brands = document.querySelectorAll(".brand");
+const search=document.getElementById("search");
+const brands=document.querySelectorAll(".brand");
 
-search.addEventListener("input", function(){
+search.addEventListener("input",function(){
 
-    const query = this.value.toLowerCase().trim();
+const query=this.value.toLowerCase().trim();
 
-    brands.forEach(function(brand){
+brands.forEach(function(brand){
 
-        const name = brand.dataset.name;
+const name=brand.dataset.name||"";
 
-        if(name.includes(query)){
-            brand.classList.remove("hidden");
-        }else{
-            brand.classList.add("hidden");
-        }
+if(name.includes(query)){
+brand.classList.remove("hidden");
+}else{
+brand.classList.add("hidden");
+}
 
-    });
+});
 
 });
 
