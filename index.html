@@ -309,4 +309,764 @@ body{
     top:-45px;
     font-size:180px;
     font-weight:900;
-    color:rgba(255,255
+    color:rgba(255,255,255,.035);
+}
+
+.telegram-content{
+    position:relative;
+    z-index:2;
+}
+
+.telegram-label{
+    color:#ff8178;
+    font-size:11px;
+    font-weight:800;
+    text-transform:uppercase;
+}
+
+.telegram-block h2{
+    font-size:27px;
+    margin:8px 0;
+}
+
+.telegram-block p{
+    color:#aeb3bc;
+    font-size:14px;
+    line-height:1.5;
+    max-width:580px;
+}
+
+.telegram-button{
+    position:relative;
+    z-index:2;
+    flex-shrink:0;
+    background:#fff;
+    color:#15171b;
+    padding:14px 20px;
+    border-radius:11px;
+    text-decoration:none;
+    font-size:13px;
+    font-weight:800;
+}
+
+/* RESOURCES */
+
+.resources{
+    margin-top:45px;
+}
+
+.resource-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:13px;
+}
+
+.resource{
+    background:#fff;
+    border:1px solid #e5e7eb;
+    border-radius:17px;
+    padding:20px;
+    text-decoration:none;
+    color:#15171b;
+    transition:.2s;
+}
+
+.resource:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(0,0,0,.06);
+}
+
+.resource-icon{
+    width:43px;
+    height:43px;
+    border-radius:12px;
+    background:#f0f1f3;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:18px;
+    font-weight:900;
+    margin-bottom:14px;
+}
+
+.resource h3{
+    font-size:15px;
+}
+
+.resource p{
+    color:#858a94;
+    font-size:11px;
+    line-height:1.4;
+    margin-top:5px;
+}
+
+.resource-button{
+    margin-top:15px;
+    color:#ef372e;
+    font-size:12px;
+    font-weight:800;
+}
+
+/* FOOTER */
+
+.footer{
+    background:#17191d;
+    color:#fff;
+    padding:30px 20px;
+}
+
+.footer-inner{
+    max-width:1180px;
+    margin:auto;
+    text-align:center;
+}
+
+.footer-title{
+    font-weight:800;
+    font-size:15px;
+}
+
+.footer-text{
+    color:#81868f;
+    font-size:11px;
+    margin-top:7px;
+}
+
+/* HIDDEN SEARCH */
+
+.brand.hidden{
+    display:none;
+}
+
+/* MOBILE */
+
+@media(max-width:950px){
+
+    .brand-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+    .resource-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:650px){
+
+    .header-inner{
+        padding:11px 14px;
+    }
+
+    .logo-icon{
+        width:36px;
+        height:36px;
+        border-radius:10px;
+    }
+
+    .logo-title{
+        font-size:15px;
+    }
+
+    .telegram-top{
+        padding:9px 11px;
+        font-size:11px;
+    }
+
+    .hero-inner{
+        padding:45px 16px 40px;
+    }
+
+    .hero h1{
+        letter-spacing:-2px;
+    }
+
+    .hero-text{
+        font-size:15px;
+    }
+
+    .main{
+        padding:30px 14px 50px;
+    }
+
+    .section-head{
+        display:block;
+    }
+
+    .search{
+        width:100%;
+        margin-top:15px;
+    }
+
+    .brand-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:9px;
+    }
+
+    .brand{
+        min-height:135px;
+        padding:15px;
+    }
+
+    .telegram-block{
+        display:block;
+        padding:25px 20px;
+        margin-top:40px;
+    }
+
+    .telegram-button{
+        display:block;
+        text-align:center;
+        margin-top:20px;
+    }
+
+    .resource-grid{
+        grid-template-columns:1fr;
+    }
+
+    .section-title{
+        font-size:24px;
+    }
+}
+
+@media(max-width:380px){
+
+    .brand-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .brand-name{
+        font-size:14px;
+    }
+
+    .brand-description{
+        font-size:10px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header class="header">
+
+<div class="header-inner">
+
+<a href="#" class="logo">
+
+<div class="logo-icon">%</div>
+
+<div>
+<div class="logo-title">Промокоды</div>
+<div class="logo-sub">Скидки • Купоны • Акции</div>
+</div>
+
+</a>
+
+<a
+href="https://t.me/zdiscounterr"
+target="_blank"
+rel="noopener"
+class="telegram-top"
+>
+🔥 Telegram
+</a>
+
+</div>
+
+</header>
+
+
+<section class="hero">
+
+<div class="hero-inner">
+
+<div class="hero-label">
+🔥 Актуальные предложения
+</div>
+
+<h1>
+Скидки на любимые
+<span>бренды</span>
+</h1>
+
+<p class="hero-text">
+Собрали страницы популярных брендов AliExpress,
+где сейчас можно посмотреть актуальные скидки,
+акции и выгодные предложения.
+</p>
+
+<a href="#brands" class="hero-button">
+Смотреть бренды ↓
+</a>
+
+</div>
+
+</section>
+
+
+<main class="main" id="brands">
+
+<div class="section-head">
+
+<div>
+
+<h2 class="section-title">
+🔥 Бренды со скидками
+</h2>
+
+<p class="section-subtitle">
+Выберите интересующий бренд и смотрите актуальные предложения
+</p>
+
+</div>
+
+<input
+type="text"
+id="search"
+class="search"
+placeholder="🔎 Найти бренд..."
+>
+
+</div>
+
+
+<!-- СМАРТФОНЫ -->
+
+<div class="category">
+
+<h3 class="category-title">
+📱 Смартфоны и электроника
+</h3>
+
+<div class="brand-grid">
+
+
+<a class="brand"
+href="https://aliexpress.ru/promotions/sl/xiaomi_poco?presentationmode=push&hastoolbar=false&pageName=Promotions_1784&fusion=y"
+target="_blank"
+rel="noopener"
+data-name="xiaomi poco">
+
+<div class="brand-logo">MI</div>
+<div class="brand-name">Xiaomi / POCO</div>
+<div class="brand-description">Смартфоны, планшеты и гаджеты</div>
+<div class="brand-arrow">→</div>
+
+</a>
+
+
+<a class="brand"
+href="https://aliexpress.ru/promotions/sl/oneplus?presentationmode=push&hastoolbar=false&pageName=Promotions_1790&fusion=y"
+target="_blank"
+rel="noopener"
+data-name="oneplus">
+
+<div class="brand-logo">1+</div>
+<div class="brand-name">OnePlus</div>
+<div class="brand-description">Смартфоны и устройства OnePlus</div>
+<div class="brand-arrow">→</div>
+
+</a>
+
+
+<a class="brand"
+href="https://aliexpress.ru/promotions/sl/realme?presentationmode=push&hastoolbar=false&pageName=Promotions_1786&fusion=y"
+target="_blank"
+rel="noopener"
+data-name="realme">
+
+<div class="brand-logo">R</div>
+<div class="brand-name">Realme</div>
+<div class="brand-description">Смартфоны и электроника</div>
+<div class="brand-arrow">→</div>
+
+</a>
+
+
+<a class="brand"
+href="https://aliexpress.ru/promotions/sl/oppo?presentationmode=push&hastoolbar=false&pageName=Promotions_2581&fusion=y"
+target="_blank"
+rel="noopener"
+data-name="oppo">
+
+<div class="brand-logo">OPPO</div>
+<div class="brand-name">OPPO</div>
+<div class="brand-description">Смартфоны и гаджеты</div>
+<div class="brand-arrow">→</div>
+
+</a>
+
+
+<a class="brand"
+href="https://aliexpress.ru/promotions/sl/honor?presentationmode=push&hastoolbar=false&pageName=Promotions_1839&fusion=y"
+target="_blank"
+rel="noopener"
+data-name="honor">
+
+<div class="brand-logo">HON</div>
+<div class="brand-name">HONOR</div>
+<div class="brand-description">Смартфоны, планшеты и техника</div>
+<div class="brand-arrow">→</div>
+
+</a>
+
+
+<a class="brand"
+href="https://aliexpress.ru/promotions/sl/vivo?presentationmode=push&hastoolbar=false&pageName=Promotions_3087&fusion=y"
+target="_blank"
+rel="noopener"
+data-name="vivo">
+
+<div class="brand-logo">vivo</div>
+<div class="brand-name">vivo</div>
+<div class="brand-description">Смартфоны и аксессуары</div>
+<div class="brand-arrow">→</div>
+
+</a>
+
+
+<a class="brand"
+href="https://aliexpress.ru/promotions/sl/samsung?presentationmode=push&hastoolbar=false&pageName=Promotions_3216&fusion=y"
+target="_blank"
+rel="noopener"
+data-name="samsung">
+
+<div class="brand-logo">S</div>
+<div class="brand-name">Samsung</div>
+<div class="brand-description">Электроника и техника</div>
+<div class="brand-arrow">→</div>
+
+</a>
+
+
+<a class="brand"
+href="https://aliexpress.ru/promotions/sl/lenovo_328?presentationmode=push&hastoolbar=false&pageName=Promotions_1868&fusion=y"
+target="_blank"
+rel="noopener"
+data-name="lenovo">
+
+<div class="brand-logo">L</div>
+<div class="brand-name">Lenovo</div>
+<div class="brand-description">Ноутбуки, планшеты и гаджеты</div>
+<div class="brand-arrow">→</div>
+
+</a>
+
+</div>
+</div>
+
+
+<!-- ТЕХНИКА -->
+
+<div class="category">
+
+<h3 class="category-title">
+🏠 Техника и гаджеты
+</h3>
+
+<div class="brand-grid">
+
+
+<a class="brand"
+href="https://aliexpress.ru/promotions/sl/70mai?presentationmode=push&hastoolbar=false&pageName=Promotions_2486&fusion=y"
+target="_blank"
+rel="noopener"
+data-name="70mai">
+
+<div class="brand-logo">70</div>
+<div class="brand-name">70mai</div>
+<div class="brand-description">Видеорегистраторы и автоэлектроника</div>
+<div class="brand-arrow">→</div>
+
+</a>
+
+
+<a class="brand"
+href="https://aliexpress.ru/promotions/sl/sbd_ugreen_17022025?presentationmode=push&hastoolbar=false&pageName=Promotions_1780&fusion=y"
+target="_blank"
+rel="noopener"
+data-name="ugreen">
+
+<div class="brand-logo">U</div>
+<div class="brand-name">UGREEN</div>
+<div class="brand-description">Зарядки, кабели и аксессуары</div>
+<div class="brand-arrow">→</div>
+
+</a>
+
+
+<a class="brand"
+href="https://aliexpress.ru/promotions/sl/sbd_baseus_17022025?presentationmode=push&hastoolbar=false&pageName=Promotions_1782&fusion=y"
+target="_blank"
+rel="noopener"
+data-name="baseus">
+
+<div class="brand-logo">B</div>
+<div class="brand-name">Baseus</div>
+<div class="brand-description">Аксессуары и электроника</div>
+<div class="brand-arrow">→</div>
+
+</a>
+
+
+<a class="brand"
+href="https://aliexpress.ru/promotions/sl/roborock_sbd?presentationmode=push&hastoolbar=false&pageName=Promotions_1848&fusion=y"
+target="_blank"
+rel="noopener"
+data-name="roborock">
+
+<div class="brand-logo">R</div>
+<div class="brand-name">Roborock</div>
+<div class="brand-description">Роботы-пылесосы и техника</div>
+<div class="brand-arrow">→</div>
+
+</a>
+
+
+<a class="brand"
+href="https://aliexpress.ru/promotions/sl/ssbd_dreame_01112024?presentationmode=push&hastoolbar=false&pageName=Promotions_1238&fusion=y"
+target="_blank"
+rel="noopener"
+data-name="dreame">
+
+<div class="brand-logo">D</div>
+<div class="brand-name">Dreame</div>
+<div class="brand-description">Пылесосы и техника для дома</div>
+<div class="brand-arrow">→</div>
+
+</a>
+
+</div>
+</div>
+
+
+<!-- ДРУГИЕ -->
+
+<div class="category">
+
+<h3 class="category-title">
+🎮 Спорт и развлечения
+</h3>
+
+<div class="brand-grid">
+
+
+<a class="brand"
+href="https://aliexpress.ru/promotions/sl/lining_sbd?presentationmode=push&hastoolbar=false&pageName=Promotions_1900&fusion=y&page=1"
+target="_blank"
+rel="noopener"
+data-name="li ning lining">
+
+<div class="brand-logo">LN</div>
+<div class="brand-name">Li-Ning</div>
+<div class="brand-description">Спортивная одежда и обувь</div>
+<div class="brand-arrow">→</div>
+
+</a>
+
+
+<a class="brand"
+href="https://aliexpress.ru/promotions/sl/nintendo?presentationmode=push&hastoolbar=false&pageName=Promotions_2506&fusion=y"
+target="_blank"
+rel="noopener"
+data-name="nintendo">
+
+<div class="brand-logo">N</div>
+<div class="brand-name">Nintendo</div>
+<div class="brand-description">Игры и игровая техника</div>
+<div class="brand-arrow">→</div>
+
+</a>
+
+</div>
+</div>
+
+
+<!-- TELEGRAM -->
+
+<div class="telegram-block">
+
+<div class="telegram-content">
+
+<div class="telegram-label">
+Не пропускайте новые скидки
+</div>
+
+<h2>
+🔥 Все новые предложения — в Telegram
+</h2>
+
+<p>
+Каждый день публикуем промокоды, купоны,
+скидки и интересные товары.
+Подписывайтесь, чтобы не искать выгодные цены самостоятельно.
+</p>
+
+</div>
+
+<a
+href="https://t.me/zdiscounterr"
+target="_blank"
+rel="noopener"
+class="telegram-button"
+>
+Перейти в Telegram →
+</a>
+
+</div>
+
+
+<!-- РЕСУРСЫ -->
+
+<div class="resources">
+
+<h2 class="section-title">
+📲 Наши площадки и боты
+</h2>
+
+<p class="section-subtitle">
+Выберите удобный способ получать скидки
+</p>
+
+
+<div class="resource-grid">
+
+
+<a
+class="resource"
+href="https://vk.com/actualpromocode"
+target="_blank"
+rel="noopener"
+>
+
+<div class="resource-icon">VK</div>
+
+<h3>ВКонтакте</h3>
+
+<p>
+Новости, скидки и промокоды
+</p>
+
+<div class="resource-button">
+Открыть → 
+</div>
+
+</a>
+
+
+<a
+class="resource"
+href="https://max.ru/actualpromocode"
+target="_blank"
+rel="noopener"
+>
+
+<div class="resource-icon">MAX</div>
+
+<h3>Канал в MAX</h3>
+
+<p>
+Свежие предложения и скидки
+</p>
+
+<div class="resource-button">
+Открыть →
+</div>
+
+</a>
+
+
+<a
+class="resource"
+href="https://t.me/nachalavy_bot"
+target="_blank"
+rel="noopener"
+>
+
+<div class="resource-icon">🤖</div>
+
+<h3>Бот со скидками</h3>
+
+<p>
+Получайте интересные предложения
+</p>
+
+<div class="resource-button">
+Запустить →
+</div>
+
+</a>
+
+
+<a
+class="resource"
+href="https://t.me/actual_promokodbot"
+target="_blank"
+rel="noopener"
+>
+
+<div class="resource-icon">🎟️</div>
+
+<h3>Бот с промокодами</h3>
+
+<p>
+Промокоды и выгодные предложения
+</p>
+
+<div class="resource-button">
+Запустить →
+</div>
+
+</a>
+
+
+</div>
+</div>
+
+</main>
+
+
+<footer class="footer">
+
+<div class="footer-inner">
+
+<div class="footer-title">
+Промокоды • Купоны • Скидки
+</div>
+
+<div class="footer-text">
+Выгодные предложения на популярные бренды
+</div>
+
+</div>
+
+</footer>
+
+
+<script>
+
+const search = document.getElementById("search");
+const brands = document.querySelectorAll(".brand");
+
+search.addEventListener("input", function(){
+
+    const query = this.value.toLowerCase().trim();
+
+    brands.forEach(function(brand){
+
+        const name = brand.dataset.name;
+
+        if(name.includes(query)){
+            brand.classList.remove("hidden");
+        }else{
+            brand.classList.add("hidden");
+        }
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>
