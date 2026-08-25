@@ -4,37 +4,1033 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Скидки и промокоды — всё в одном месте</title>
-<meta name="description" content="Актуальные скидки, промокоды и выгодные предложения. Telegram, VK, MAX и Telegram-боты.">
+<title>Промокоды и купоны — лучшие скидки</title>
+
+<meta name="description"
+content="Актуальные промокоды, купоны и лучшие скидки на популярные товары.">
 
 <style>
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
 }
 
-html {
-    scroll-behavior: smooth;
+html{
+    scroll-behavior:smooth;
 }
 
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#08090d;
+    color:#fff;
+    overflow-x:hidden;
+}
+
+/* ---------- ФОН ---------- */
+
+body::before{
+    content:"";
+    position:fixed;
+    width:600px;
+    height:600px;
+    left:-250px;
+    top:-200px;
+    background:#ff3030;
+    opacity:.13;
+    filter:blur(150px);
+    border-radius:50%;
+    pointer-events:none;
+}
+
+body::after{
+    content:"";
+    position:fixed;
+    width:500px;
+    height:500px;
+    right:-200px;
+    top:200px;
+    background:#ff7a00;
+    opacity:.10;
+    filter:blur(150px);
+    border-radius:50%;
+    pointer-events:none;
+}
+
+.container{
+    width:min(1120px,92%);
+    margin:auto;
+}
+
+/* ---------- HEADER ---------- */
+
+header{
+    padding:20px 0;
+    border-bottom:1px solid rgba(255,255,255,.07);
+}
+
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:11px;
+    font-weight:800;
+}
+
+.logo-icon{
+    width:43px;
+    height:43px;
+    border-radius:13px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:linear-gradient(135deg,#ff3030,#ff7417);
+
+    font-size:23px;
+    font-weight:900;
+
+    box-shadow:
+        0 10px 35px rgba(255,50,50,.35);
+}
+
+.logo-text{
+    font-size:17px;
+}
+
+.logo-sub{
+    color:#858b99;
+    font-size:11px;
+    margin-top:3px;
+}
+
+.header-badge{
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.08);
+    padding:8px 13px;
+    border-radius:30px;
+
+    color:#bfc3cc;
+    font-size:12px;
+}
+
+/* ---------- HERO ---------- */
+
+.hero{
+    padding:65px 0 50px;
+}
+
+.hero-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:45px;
+    align-items:center;
+}
+
+.label{
+    display:inline-block;
+
+    padding:8px 13px;
+
+    border-radius:30px;
+
+    background:rgba(255,55,55,.10);
+    border:1px solid rgba(255,75,75,.22);
+
+    color:#ff7777;
+
+    font-size:12px;
+    font-weight:700;
+
+    letter-spacing:.4px;
+}
+
+h1{
+    font-size:clamp(43px,6vw,72px);
+    line-height:.95;
+
+    letter-spacing:-4px;
+
+    margin:20px 0;
+}
+
+h1 span{
     background:
-        radial-gradient(circle at 50% -10%, rgba(255, 75, 50, .13), transparent 35%),
-        linear-gradient(160deg, #f7f9fc 0%, #edf1f6 100%);
-    color: #17191d;
-    min-height: 100vh;
-    padding: 18px 15px 30px;
+        linear-gradient(
+            90deg,
+            #ffffff,
+            #ff9b55,
+            #ff3d3d
+        );
+
+    -webkit-background-clip:text;
+    background-clip:text;
+
+    color:transparent;
 }
 
-.page {
-    width: 100%;
-    max-width: 500px;
-    margin: auto;
+.hero-text{
+    color:#9da3b1;
+    font-size:18px;
+    line-height:1.6;
+
+    max-width:590px;
 }
 
-/* TOP */
+.main-button{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+
+    margin-top:25px;
+
+    padding:16px 22px;
+
+    border-radius:14px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ff3030,
+            #ff7015
+        );
+
+    color:#fff;
+
+    text-decoration:none;
+
+    font-size:15px;
+    font-weight:800;
+
+    box-shadow:
+        0 15px 40px rgba(255,60,40,.25);
+
+    transition:.2s;
+}
+
+.main-button:hover{
+    transform:translateY(-3px);
+
+    box-shadow:
+        0 20px 50px rgba(255,60,40,.35);
+}
+
+/* ---------- РЕКЛАМНЫЙ БАННЕР ---------- */
+
+.banner{
+    position:relative;
+
+    min-height:390px;
+
+    padding:28px;
+
+    border-radius:30px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.11),
+            rgba(255,255,255,.035)
+        );
+
+    border:1px solid rgba(255,255,255,.12);
+
+    box-shadow:
+        0 30px 80px rgba(0,0,0,.45);
+
+    overflow:hidden;
+
+    transform:rotate(1deg);
+}
+
+.banner::before{
+    content:"";
+
+    position:absolute;
+
+    width:300px;
+    height:300px;
+
+    right:-100px;
+    top:-100px;
+
+    border-radius:50%;
+
+    background:#ff3b30;
+
+    opacity:.22;
+
+    filter:blur(50px);
+}
+
+.banner-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    position:relative;
+    z-index:2;
+}
+
+.market-logo{
+    font-size:25px;
+    font-weight:900;
+}
+
+.market-logo span{
+    color:#ff4635;
+}
+
+.sale{
+    background:#fff;
+    color:#111;
+
+    padding:8px 12px;
+
+    border-radius:10px;
+
+    font-size:11px;
+    font-weight:900;
+}
+
+.big-sale{
+    position:relative;
+    z-index:2;
+
+    margin-top:45px;
+
+    font-size:82px;
+    line-height:1;
+
+    letter-spacing:-7px;
+
+    font-weight:900;
+}
+
+.big-sale span{
+    font-size:28px;
+    letter-spacing:0;
+}
+
+.banner-description{
+    position:relative;
+    z-index:2;
+
+    color:#b5bac5;
+
+    margin-top:10px;
+
+    line-height:1.5;
+}
+
+.products{
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:10px;
+
+    margin-top:25px;
+}
+
+.product{
+    height:95px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-radius:17px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #252936,
+            #0e1016
+        );
+
+    border:1px solid rgba(255,255,255,.07);
+
+    font-size:38px;
+}
+
+.floating{
+    position:absolute;
+
+    padding:11px 14px;
+
+    border-radius:12px;
+
+    background:#171a24;
+
+    border:1px solid rgba(255,255,255,.1);
+
+    font-size:12px;
+    font-weight:800;
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,.3);
+
+    z-index:4;
+}
+
+.floating.one{
+    right:15px;
+    top:90px;
+}
+
+.floating.two{
+    left:15px;
+    bottom:25px;
+}
+
+/* ---------- СЕКЦИИ ---------- */
+
+section{
+    padding:45px 0;
+}
+
+.section-title{
+    font-size:30px;
+
+    margin-bottom:20px;
+
+    letter-spacing:-1px;
+}
+
+.cards{
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:15px;
+}
+
+.card{
+    padding:22px;
+
+    border-radius:20px;
+
+    background:
+        rgba(255,255,255,.045);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.2s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+
+    background:
+        rgba(255,255,255,.07);
+}
+
+.card-icon{
+    width:45px;
+    height:45px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:13px;
+
+    background:
+        rgba(255,55,55,.12);
+
+    font-size:21px;
+
+    margin-bottom:15px;
+}
+
+.card h3{
+    font-size:18px;
+
+    margin-bottom:8px;
+}
+
+.card p{
+    color:#8f96a5;
+
+    line-height:1.5;
+
+    font-size:14px;
+}
+
+/* ---------- ПРЕДЛОЖЕНИЯ ---------- */
+
+.deals{
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:14px;
+}
+
+.deal{
+    padding:15px;
+
+    background:#11141b;
+
+    border-radius:20px;
+
+    border:1px solid rgba(255,255,255,.07);
+
+    transition:.2s;
+}
+
+.deal:hover{
+    transform:translateY(-5px);
+}
+
+.deal-image{
+    height:145px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:15px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #252936,
+            #0c0e13
+        );
+
+    font-size:58px;
+
+    margin-bottom:13px;
+}
+
+.deal-name{
+    font-size:15px;
+
+    font-weight:700;
+
+    margin-bottom:7px;
+}
+
+.price{
+    font-size:20px;
+
+    font-weight:900;
+}
+
+.old-price{
+    color:#656b78;
+
+    text-decoration:line-through;
+
+    font-size:12px;
+
+    margin-left:5px;
+}
+
+.deal-button{
+    display:block;
+
+    text-align:center;
+
+    margin-top:12px;
+
+    padding:10px;
+
+    border-radius:11px;
+
+    background:#242833;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    font-size:12px;
+
+    font-weight:800;
+}
+
+/* ---------- FINAL CTA ---------- */
+
+.final{
+    margin-top:20px;
+
+    padding:45px 25px;
+
+    border-radius:28px;
+
+    text-align:center;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,55,55,.16),
+            rgba(255,120,20,.08)
+        );
+
+    border:1px solid rgba(255,255,255,.09);
+}
+
+.final h2{
+    font-size:32px;
+
+    margin-bottom:10px;
+}
+
+.final p{
+    color:#949aa8;
+}
+
+/* ---------- FOOTER ---------- */
+
+footer{
+    padding:25px 0 40px;
+
+    text-align:center;
+
+    color:#666c78;
+
+    font-size:12px;
+}
+
+/* ---------- MOBILE ---------- */
+
+@media(max-width:800px){
+
+    .hero-grid{
+        grid-template-columns:1fr;
+    }
+
+    .hero{
+        padding-top:40px;
+    }
+
+    .cards{
+        grid-template-columns:1fr;
+    }
+
+    .deals{
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .banner{
+        transform:none;
+    }
+
+    h1{
+        letter-spacing:-2.5px;
+    }
+
+}
+
+@media(max-width:500px){
+
+    .header-badge{
+        display:none;
+    }
+
+    .hero-text{
+        font-size:16px;
+    }
+
+    .deals{
+        grid-template-columns:1fr;
+    }
+
+    .big-sale{
+        font-size:65px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="container header">
+
+<div class="logo">
+
+<div class="logo-icon">
+%
+</div>
+
+<div>
+
+<div class="logo-text">
+Промокоды
+</div>
+
+<div class="logo-sub">
+Купоны • Акции • Скидки
+</div>
+
+</div>
+
+</div>
+
+<div class="header-badge">
+🔥 Выгодные предложения каждый день
+</div>
+
+</div>
+
+</header>
+
+
+<main>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="container hero-grid">
+
+<div>
+
+<div class="label">
+🔥 ГОРЯЧИЕ ПРЕДЛОЖЕНИЯ
+</div>
+
+<h1>
+
+Скидки, которые
+<br>
+
+<span>стоит забрать</span>
+
+</h1>
+
+<p class="hero-text">
+
+Промокоды, купоны и выгодные предложения
+на популярные товары — всё самое интересное
+собрали в одном месте.
+
+</p>
+
+<a
+class="main-button"
+href="#deals"
+>
+
+Смотреть лучшие скидки
+
+→
+
+</a>
+
+</div>
+
+
+<!-- БАННЕР -->
+
+<div class="banner">
+
+<div class="banner-top">
+
+<div class="market-logo">
+Ali<span>Express</span>
+</div>
+
+<div class="sale">
+SALE
+</div>
+
+</div>
+
+
+<div class="big-sale">
+
+−50<span>%</span>
+
+</div>
+
+
+<div class="banner-description">
+
+Скидки и промокоды на популярные товары.
+<br>
+Проверяйте цену перед покупкой.
+
+</div>
+
+
+<div class="products">
+
+<div class="product">
+📱
+</div>
+
+<div class="product">
+🎧
+</div>
+
+<div class="product">
+🤖
+</div>
+
+</div>
+
+
+<div class="floating one">
+⚡ Купон
+</div>
+
+<div class="floating two">
+💸 Выгодная цена
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ПРЕИМУЩЕСТВА -->
+
+<section>
+
+<div class="container">
+
+<h2 class="section-title">
+Почему стоит заглянуть
+</h2>
+
+<div class="cards">
+
+
+<div class="card">
+
+<div class="card-icon">
+🎟️
+</div>
+
+<h3>
+Промокоды
+</h3>
+
+<p>
+Актуальные купоны и промокоды,
+которые помогут получить дополнительную скидку.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="card-icon">
+🔥
+</div>
+
+<h3>
+Горящие скидки
+</h3>
+
+<p>
+Отбираем предложения с действительно
+интересными ценами.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="card-icon">
+🔎
+</div>
+
+<h3>
+Всё в одном месте
+</h3>
+
+<p>
+Не нужно искать акции по десяткам сайтов —
+интересные предложения собраны здесь.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ТОВАРЫ -->
+
+<section id="deals">
+
+<div class="container">
+
+<h2 class="section-title">
+Что сейчас выгодно купить
+</h2>
+
+
+<div class="deals">
+
+
+<div class="deal">
+
+<div class="deal-image">
+📱
+</div>
+
+<div class="deal-name">
+Смартфоны
+</div>
+
+<div class="price">
+от 9 990 ₽
+</div>
+
+<a class="deal-button" href="#">
+Посмотреть →
+</a>
+
+</div>
+
+
+<div class="deal">
+
+<div class="deal-image">
+🎧
+</div>
+
+<div class="deal-name">
+Наушники
+</div>
+
+<div class="price">
+от 1 490 ₽
+</div>
+
+<a class="deal-button" href="#">
+Посмотреть →
+</a>
+
+</div>
+
+
+<div class="deal">
+
+<div class="deal-image">
+🧹
+</div>
+
+<div class="deal-name">
+Техника для дома
+</div>
+
+<div class="price">
+от 3 990 ₽
+</div>
+
+<a class="deal-button" href="#">
+Посмотреть →
+</a>
+
+</div>
+
+
+<div class="deal">
+
+<div class="deal-image">
+⌚
+</div>
+
+<div class="deal-name">
+Гаджеты
+</div>
+
+<div class="price">
+от 990 ₽
+</div>
+
+<a class="deal-button" href="#">
+Посмотреть →
+</a>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ФИНАЛ -->
+
+<section>
+
+<div class="container">
+
+<div class="final">
+
+<h2>
+Не пропускайте хорошие цены
+</h2>
+
+<p>
+Откройте подборку актуальных предложений
+и выберите то, что действительно интересно.
+</p>
+
+<a
+class="main-button"
+href="#deals"
+>
+
+Перейти к предложениям →
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+</main>
+
+
+<footer>
+
+<div class="container">
+
+Промокоды • Купоны • Акции • Скидки
+
+</div>
+
+</footer>
+
+
+</body>
+</html>/* TOP */
 
 .top {
     text-align: center;
